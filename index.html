@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- daisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom tailwind -->
+     <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn_primary': '#E76F51',
+            "slider_bg": 'rgba(231, 111, 81, 0.1)',
+          },
+          fontFamily: {
+            poppins: ["Poppins", "serif"]
+          }
+        }
+      }
+    }
+    </script>
+    <!-- CSS -->
+     <style>
+
+
+        @media screen and (max-width: 640px){
+            .Nav_btn{
+                display: none;
+            }
+        }
+     </style>
+</head>
+<body class="font-poppins">
+   <!-- Header section -->
+ <header class="max-w-6xl mx-auto pt-4 ">
+    <nav class="px-3 lg:px-3">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="font-bold text-4xl">Bike Dekho</a>
+            </div>
+            <div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-semibold text-base">Home</a></li>
+                        <li><a class="font-semibold text-base">Shop</a></li>
+                        <li><a class="font-semibold text-base">News</a></li>
+                        <li><a class="font-semibold text-base">Contact</a></li>
+                </ul>
+                </div>
+                <div class="">
+                    <div class="dropdown relative">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-3">
+                        <li><a>Item 1</a></li>
+                        <li>
+                          <a>Parent</a>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                      </ul>
+                    </div>
+                    <a class="Nav_btn btn bg-btn_primary px-12 py-4 text-white hover:text-btn_primary hover:border hover:border-btn_primary hover:bg-transparent font-bold">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel w-full bg-slider_bg mt-10 lg:px-5">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+            <!-- Container -->
+          <div class="flex flex-col lg:flex-row items-center lg:p-24 p-10 mx-auto">
+            <!-- content -->
+             <div class="flex-1 px-3 ">
+                <h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p class="font-light text-base mt-5 mb-8">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit.</p>
+                <button class=" btn bg-btn_primary px-8 py-4 text-white hover:text-btn_primary hover:border hover:border-btn_primary hover:bg-transparent font-bold">Purchase</button>
+             </div>
+             <!-- image -->
+              <div class="max-w-[400px]">
+                <img class="w-full" src="./images/slider/bike1.png" alt="">
+              </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle bg-transparent text-btn_primary border-none">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-transparent text-btn_primary border-none">❯</a>
+          </div>
+        </div>
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+            <!-- Container -->
+          <div class="flex flex-col lg:flex-row items-center lg:p-24 p-10 mx-auto">
+            <!-- content -->
+             <div class="flex-1 px-3 ">
+                <h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p class="font-light text-base mt-5 mb-8">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit.</p>
+                <button class=" btn bg-btn_primary px-8 py-4 text-white hover:text-btn_primary hover:border hover:border-btn_primary hover:bg-transparent font-bold">Purchase</button>
+             </div>
+             <!-- image -->
+              <div class="max-w-[400px]">
+                <img class="w-full" src="./images/slider/bike2.png" alt="">
+              </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle bg-transparent text-btn_primary border-none">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-transparent text-btn_primary border-none">❯</a>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+            <!-- Container -->
+          <div class="flex flex-col lg:flex-row items-center lg:p-24 p-10 mx-auto">
+            <!-- content -->
+             <div class="flex-1 px-3 ">
+                <h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p class="font-light text-base mt-5 mb-8">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit.</p>
+                <button class=" btn bg-btn_primary px-8 py-4 text-white hover:text-btn_primary hover:border hover:border-btn_primary hover:bg-transparent font-bold">Purchase</button>
+             </div>
+             <!-- image -->
+              <div class="max-w-[400px]">
+                <img class="w-full" src="./images/slider/bike3.png" alt="">
+              </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle bg-transparent text-btn_primary border-none">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-transparent text-btn_primary border-none">❯</a>
+          </div>
+        </div>
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+            <!-- Container -->
+          <div class="flex flex-col lg:flex-row items-center lg:p-24 p-10 mx-auto">
+            <!-- content -->
+             <div class="flex-1 px-3 ">
+                <h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p class="font-light text-base mt-5 mb-8">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint. Velit officia consequat <br>duis enim velit mollit.</p>
+                <button class=" btn bg-btn_primary px-8 py-4 text-white hover:text-btn_primary hover:border hover:border-btn_primary hover:bg-transparent font-bold">Purchase</button>
+             </div>
+             <!-- image -->
+              <div class="max-w-[400px]">
+                <img class="w-full" src="./images/slider/bike4.png" alt="">
+              </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle bg-transparent text-btn_primary border-none">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-transparent text-btn_primary border-none">❯</a>
+          </div>
+        </div>
+    </div>
+ </header> 
+</body>
+
+</html>
+
+
